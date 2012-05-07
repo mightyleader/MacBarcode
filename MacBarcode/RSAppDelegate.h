@@ -10,6 +10,13 @@
 
 @interface RSAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (assign) IBOutlet NSView *drawView;
+@property (assign) IBOutlet NSTextField *stringCheck;
+@property (assign) IBOutlet NSTextView *textPlace;
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSPopUpButton *dropBox;
+@property (assign) IBOutlet NSTextFieldCell *actualText;
+
+- (IBAction)dropDown:(id)sender;
 
 @end
