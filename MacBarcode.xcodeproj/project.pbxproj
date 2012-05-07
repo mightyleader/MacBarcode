@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D444361F1558438B00E7FAA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D444361E1558438B00E7FAA0 /* Cocoa.framework */; };
+		D44436291558438B00E7FAA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D44436271558438B00E7FAA0 /* InfoPlist.strings */; };
+		D444362B1558438B00E7FAA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D444362A1558438B00E7FAA0 /* main.m */; };
+		D444362F1558438B00E7FAA0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D444362D1558438B00E7FAA0 /* Credits.rtf */; };
+		D44436321558438B00E7FAA0 /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D44436311558438B00E7FAA0 /* RSAppDelegate.m */; };
+		D44436351558438B00E7FAA0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44436331558438B00E7FAA0 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D444361A1558438B00E7FAA0 /* MacBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D444361E1558438B00E7FAA0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D44436211558438B00E7FAA0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D44436221558438B00E7FAA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D44436231558438B00E7FAA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D44436261558438B00E7FAA0 /* MacBarcode-Info.plist */ = {isa = PBXFileReference; path = "MacBarcode-Info.plist"; sourceTree = "<group>"; };
+		D44436281558438B00E7FAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D444362A1558438B00E7FAA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D444362C1558438B00E7FAA0 /* MacBarcode-Prefix.pch */ = {isa = PBXFileReference; path = "MacBarcode-Prefix.pch"; sourceTree = "<group>"; };
+		D444362E1558438B00E7FAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D44436301558438B00E7FAA0 /* RSAppDelegate.h */ = {isa = PBXFileReference; path = RSAppDelegate.h; sourceTree = "<group>"; };
+		D44436311558438B00E7FAA0 /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
+		D44436341558438B00E7FAA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D44436171558438B00E7FAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D444361F1558438B00E7FAA0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D444360F1558438A00E7FAA0 = {
+			isa = PBXGroup;
+			children = (
+				D44436241558438B00E7FAA0 /* MacBarcode */,
+				D444361D1558438B00E7FAA0 /* Frameworks */,
+				D444361B1558438B00E7FAA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D444361B1558438B00E7FAA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D444361A1558438B00E7FAA0 /* MacBarcode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D444361D1558438B00E7FAA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D444361E1558438B00E7FAA0 /* Cocoa.framework */,
+				D44436201558438B00E7FAA0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D44436201558438B00E7FAA0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D44436211558438B00E7FAA0 /* AppKit.framework */,
+				D44436221558438B00E7FAA0 /* CoreData.framework */,
+				D44436231558438B00E7FAA0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D44436241558438B00E7FAA0 /* MacBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				D44436301558438B00E7FAA0 /* RSAppDelegate.h */,
+				D44436311558438B00E7FAA0 /* RSAppDelegate.m */,
+				D44436331558438B00E7FAA0 /* MainMenu.xib */,
+				D44436251558438B00E7FAA0 /* Supporting Files */,
+			);
+			path = MacBarcode;
+			sourceTree = "<group>";
+		};
+		D44436251558438B00E7FAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D44436261558438B00E7FAA0 /* MacBarcode-Info.plist */,
+				D44436271558438B00E7FAA0 /* InfoPlist.strings */,
+				D444362A1558438B00E7FAA0 /* main.m */,
+				D444362C1558438B00E7FAA0 /* MacBarcode-Prefix.pch */,
+				D444362D1558438B00E7FAA0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D44436191558438B00E7FAA0 /* MacBarcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44436381558438B00E7FAA0 /* Build configuration list for PBXNativeTarget "MacBarcode" */;
+			buildPhases = (
+				D44436161558438B00E7FAA0 /* Sources */,
+				D44436171558438B00E7FAA0 /* Frameworks */,
+				D44436181558438B00E7FAA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacBarcode;
+			productName = MacBarcode;
+			productReference = D444361A1558438B00E7FAA0 /* MacBarcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D44436111558438A00E7FAA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Cocoadelica;
+			};
+			buildConfigurationList = D44436141558438A00E7FAA0 /* Build configuration list for PBXProject "MacBarcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D444360F1558438A00E7FAA0;
+			productRefGroup = D444361B1558438B00E7FAA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D44436191558438B00E7FAA0 /* MacBarcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D44436181558438B00E7FAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44436291558438B00E7FAA0 /* InfoPlist.strings in Resources */,
+				D444362F1558438B00E7FAA0 /* Credits.rtf in Resources */,
+				D44436351558438B00E7FAA0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D44436161558438B00E7FAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D444362B1558438B00E7FAA0 /* main.m in Sources */,
+				D44436321558438B00E7FAA0 /* RSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D44436271558438B00E7FAA0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44436281558438B00E7FAA0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D444362D1558438B00E7FAA0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D444362E1558438B00E7FAA0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D44436331558438B00E7FAA0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44436341558438B00E7FAA0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D44436361558438B00E7FAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D44436371558438B00E7FAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D44436391558438B00E7FAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBarcode/MacBarcode-Prefix.pch";
+				INFOPLIST_FILE = "MacBarcode/MacBarcode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D444363A1558438B00E7FAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacBarcode/MacBarcode-Prefix.pch";
+				INFOPLIST_FILE = "MacBarcode/MacBarcode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D44436141558438A00E7FAA0 /* Build configuration list for PBXProject "MacBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44436361558438B00E7FAA0 /* Debug */,
+				D44436371558438B00E7FAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44436381558438B00E7FAA0 /* Build configuration list for PBXNativeTarget "MacBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44436391558438B00E7FAA0 /* Debug */,
+				D444363A1558438B00E7FAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D44436111558438A00E7FAA0 /* Project object */;
+}
