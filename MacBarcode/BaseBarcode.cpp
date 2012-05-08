@@ -23,10 +23,12 @@ BaseBarcode::BaseBarcode( )
 	//empty
 }
 
+
 BaseBarcode::~BaseBarcode( )
 {
 	//empty
 }
+
 
 #pragma mark --Accessor Methods--
 
