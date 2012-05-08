@@ -19,6 +19,7 @@
 #include "UPCE.h"
 #include "Symbol.h"
 #include <deque>
+#include <iostream>
 
 @interface RSBarcodeViewController ()
 
@@ -40,10 +41,10 @@
     if (self)
 	{
 		[self setDataString:barcodeData];
-		[self.view setFrame:rect];
+		self.theView = [[NSView alloc] initWithFrame:rect];
     }
 	
-	_theView.frame = rect;
+	self.view = _theView;
 	[self setView:_theView];
 	
 	//**create the correct subtype**
@@ -80,25 +81,74 @@
 	
 	
 	deque< Symbol* > testDeque = barcode->getEncodedSymbols( );
+	NSMutableArray *modulesPerSymbol = [[NSMutableArray alloc] init];
+	int nondata_accumulator = 0, data_accumulator = 0, icgap = 0, local_accum = 0;
 	for ( int gg = 0; gg < testDeque.size( ); gg++ ) 
 	{
-		NSLog(@"%i. %i", gg, testDeque.at( gg )->getSymbolType( ) );
+		vector< int > *pattern;
+		pattern = testDeque.at( gg )->getEncodedData( );
+		switch ( testDeque.at( gg )->getSymbolType( ) ) 
+		{
+			case 0: //add up all the element widths for data
+				icgap = testDeque.at( gg )->getIntercharGap( );
+				data_accumulator += icgap;
+				local_accum = 0;
+				for ( int hh = 0; hh < pattern->size( ); hh++ ) 
+				{
+					int result = pattern->at( hh );
+					local_accum += result;
+					data_accumulator = data_accumulator + result;
+				}
+				[modulesPerSymbol addObject:[NSNumber numberWithInt:local_accum]];
+			break;
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5: //add up all the element widths for nondata
+				icgap = testDeque.at( gg )->getIntercharGap( );
+				nondata_accumulator += icgap;
+				local_accum = 0;
+				for ( int hh = 0; hh < pattern->size( ); hh++ ) 
+				{
+					int result = pattern->at( hh );
+					local_accum += result;
+					nondata_accumulator += result;
+				}
+				[modulesPerSymbol addObject:[NSNumber numberWithInt:local_accum]];
+				break;
+			default:
+				break;
+		}
+		
 	}
+	NSLog( @"%@ ", modulesPerSymbol );
 	
-	//add up all the element widths for nondata
-	//add up all the element widths for data
-	//store them both and the total
-	//calc and store the xWidth
+	int selfwidth = ( int )self.view.frame.size.width;
+	int totalModules = ( data_accumulator + nondata_accumulator );
+	[self setDatamoduleCount:data_accumulator];
+	[self setNondatamoduleCount:nondata_accumulator];
+	[self setTotalmoduleCount:totalModules];
+	int findX = selfwidth / totalModules;
+	self.xWidth = findX;
+	
+	NSLog( @"Total Modules: %i" , totalModules );
+	
 	
 	//create an RSSymbol for each Symbol
 	//Work out the width for each one
-	//Draw the RSBar and RSSpace objects inside
+	
 	//Add them into self.view
 	
 	
 	
     delete cplusplus_datastring;
     return self;
+}
+
+- (void) loadView
+{
+	
 }
 
 
