@@ -199,11 +199,7 @@
 		
 		//Add them into self.view
 		[self.view addSubview:aSymbol];
-		//increment insertionPoint by symbol width
 		insertionPoint.x += width_accum * _xWidth;
-		
-		//NSLog( @"%@ ", symbolPattern );
-		
 		symbolPattern = nil;
 		[symbolPattern release];
 	}
