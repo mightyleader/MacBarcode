@@ -8,21 +8,10 @@
 
 #import "RSAppDelegate.h"
 #import "RSBarcodeViewController.h"
-#include <iostream>
-#include "Code39.h"
-#include "Code128.h"
-#include "Codabar.h"
-#include "EAN8.h"
-#include "EAN13.h"
-#include "UPCA.h"
-#include "UPCE.h"
-#include "Interleaved2of5.h"
-#include "Symbol.h"
 
 
 @implementation RSAppDelegate
 
-@synthesize drawView = _drawView;
 @synthesize stringCheck = _stringCheck;
 @synthesize textPlace = _textPlace;
 @synthesize window = _window;
@@ -36,10 +25,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	string *testString = new string("AIM1234");
+	CGFloat height = _window.frame.size.height;
+	RSBarcodeViewController *bVC = [[RSBarcodeViewController alloc] initWithType:kRSEAN13 andData:@"978059600496" atPosition:NSMakeRect( 0,height - ( height * 0.5 ), _window.frame.size.width , height * 0.5 )];
 	
-	RSBarcodeViewController *bVC = [[RSBarcodeViewController alloc] initWithType:kRSCode128 andData:@"AIM1234" atPosition:NSMakeRect( 0, 0, 500, 100 )];
-	
+	[_window.contentView addSubview:bVC.view];
 
 }
 

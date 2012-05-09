@@ -10,7 +10,6 @@
 
 @interface RSAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSView *drawView;
 @property (assign) IBOutlet NSTextField *stringCheck;
 @property (assign) IBOutlet NSTextView *textPlace;
 @property (assign) IBOutlet NSWindow *window;
