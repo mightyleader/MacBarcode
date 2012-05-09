@@ -30,7 +30,6 @@ public:
 	void encodeQuietZones( );
 	void encodeGuardPatterns( );
 	void setGuardPatterns( string left, string centre, string right );
-	void encodeCheckCharacter( const string *data );
 	vector< string > getGuardPatterns( );
 	vector< int >* stringToVector( string aString );
 	bool verifyContent ( const string *content );

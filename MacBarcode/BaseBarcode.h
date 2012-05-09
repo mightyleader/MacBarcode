@@ -25,6 +25,7 @@ class BaseBarcode
 	deque< Symbol* > getEncodedSymbols( );
 	int getCheckcharModulus( );
 	int getDataLength( );
+	string completedDataString;
 	
 	protected:
 	//Build and Destroy
