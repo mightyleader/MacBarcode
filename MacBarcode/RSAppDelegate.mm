@@ -26,7 +26,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	CGFloat height = _window.frame.size.height;
-	RSBarcodeViewController *bVC = [[RSBarcodeViewController alloc] initWithType:kRSEAN13 andData:@"978059600496" atPosition:NSMakeRect( 0,height - ( height * 0.5 ), _window.frame.size.width , height * 0.5 )];
+	RSBarcodeViewController *bVC = [[RSBarcodeViewController alloc] initWithType:kRSCode128 andData:@"1234567" atPosition:NSMakeRect( 0,height - ( height * 0.5 ), _window.frame.size.width , height * 0.5 )];
 	
 	[_window.contentView addSubview:bVC.view];
 
