@@ -241,101 +241,101 @@
 	{
 		case kRSEAN13:
 			[labelOne setString:[contentString substringWithRange:NSMakeRange(0, 1)]];
-			[labelOne setFrame:NSMakeRect( 0, -(localHeight * 0.05), localWidth * 0.08, localHeight * 0.15 )];
+			[labelOne setFrame:NSMakeRect( 0, 0, localWidth * 0.08, localHeight * 0.15 )]; //-(localHeight * 0.05)
 			[labelOne setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelOne setNeedsDisplay:YES];
 			[self.view addSubview:labelOne];
 			
 			[labelTwo setString:[contentString substringWithRange:NSMakeRange(0, 6)]];
-			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, -(localHeight * 0.05), localWidth * 0.35, localHeight * 0.15 )];
+			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, 0, localWidth * 0.35, localHeight * 0.15 )]; //-(localHeight * 0.05)
 			[labelTwo setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelTwo setNeedsDisplay:YES];
 			[self.view addSubview:labelTwo];
 			
 			[labelThree setString:[contentString substringWithRange:NSMakeRange(6, 6)]];
-			[labelThree setFrame:NSMakeRect( localWidth * 0.53, -(localHeight * 0.05), localWidth * 0.35, localHeight * 0.15 )];
+			[labelThree setFrame:NSMakeRect( localWidth * 0.53, 0, localWidth * 0.35, localHeight * 0.15 )]; //-(localHeight * 0.05)
 			[labelThree setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelThree setNeedsDisplay:YES];
 			[self.view addSubview:labelThree];
 			
 			[labelFour setString:[ contentString substringWithRange:NSMakeRange(12, 1)]];
-			[labelFour setFrame:NSMakeRect( localWidth * 0.91, -(localHeight * 0.05), localWidth * 0.1, localHeight * 0.15 )];
+			[labelFour setFrame:NSMakeRect( localWidth * 0.91, 0, localWidth * 0.1, localHeight * 0.15 )]; //-(localHeight * 0.05)
 			[labelFour setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelFour setNeedsDisplay:YES];
 			[self.view addSubview:labelFour];
 			break;
 		case kRSEAN8:
 			[labelOne setString:@"<"];
-			[labelOne setFrame:NSMakeRect( 0, -(localHeight * 0.05), localWidth * 0.08, localHeight * 0.15 )];
+			[labelOne setFrame:NSMakeRect( 0, 0, localWidth * 0.08, localHeight * 0.15 )];
 			[labelOne setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelOne setNeedsDisplay:YES];
 			[self.view addSubview:labelOne];
 			
 			[labelTwo setString:[contentString substringWithRange:NSMakeRange(0, 4)]];
-			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, -(localHeight * 0.05), localWidth * 0.33, localHeight * 0.15 )];
+			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, 0, localWidth * 0.33, localHeight * 0.15 )];
 			[labelTwo setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelTwo setNeedsDisplay:YES];
 			[self.view addSubview:labelTwo];
 			
 			[labelThree setString:[contentString substringWithRange:NSMakeRange(4, 4)]];
-			[labelThree setFrame:NSMakeRect( localWidth * 0.53, -(localHeight * 0.05), localWidth * 0.33, localHeight * 0.15 )];
+			[labelThree setFrame:NSMakeRect( localWidth * 0.53, 0, localWidth * 0.33, localHeight * 0.15 )];
 			[labelThree setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelThree setNeedsDisplay:YES];
 			[self.view addSubview:labelThree];
 			
 			[labelFour setString:@">"];
-			[labelFour setFrame:NSMakeRect( localWidth * 0.91, -(localHeight * 0.05), localWidth * 0.1, localHeight * 0.15 )];
+			[labelFour setFrame:NSMakeRect( localWidth * 0.91, 0, localWidth * 0.1, localHeight * 0.15 )];
 			[labelFour setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelFour setNeedsDisplay:YES];
 			[self.view addSubview:labelFour];
 			break;
 		case kRSUPCA:
 			[labelOne setString:[contentString substringWithRange:NSMakeRange(0, 1)]];
-			[labelOne setFrame:NSMakeRect( 0, -(localHeight * 0.05), localWidth * 0.08, localHeight * 0.15 )];
+			[labelOne setFrame:NSMakeRect( 0, 0, localWidth * 0.08, localHeight * 0.15 )];
 			[labelOne setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelOne setNeedsDisplay:YES];
 			[self.view addSubview:labelOne];
 			
 			[labelTwo setString:[contentString substringWithRange:NSMakeRange(1, 5)]];
-			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, -(localHeight * 0.05), localWidth * 0.35, localHeight * 0.15 )];
+			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, 0, localWidth * 0.35, localHeight * 0.15 )];
 			[labelTwo setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelTwo setNeedsDisplay:YES];
 			[self.view addSubview:labelTwo];
 			
 			[labelThree setString:[contentString substringWithRange:NSMakeRange(6, 5)]];
-			[labelThree setFrame:NSMakeRect( localWidth * 0.53, -(localHeight * 0.05), localWidth * 0.35, localHeight * 0.15 )];
+			[labelThree setFrame:NSMakeRect( localWidth * 0.53, 0, localWidth * 0.35, localHeight * 0.15 )];
 			[labelThree setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelThree setNeedsDisplay:YES];
 			[self.view addSubview:labelThree];
 			
 			[labelFour setString:[ contentString substringWithRange:NSMakeRange(11, 1)]];
-			[labelFour setFrame:NSMakeRect( localWidth * 0.91, -(localHeight * 0.05), localWidth * 0.1, localHeight * 0.15 )];
+			[labelFour setFrame:NSMakeRect( localWidth * 0.91, 0, localWidth * 0.1, localHeight * 0.15 )];
 			[labelFour setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelFour setNeedsDisplay:YES];
 			[self.view addSubview:labelFour];
 			break;
 		case kRSUPCE:
 			[labelOne setString:@"0"];
-			[labelOne setFrame:NSMakeRect( 0, -(localHeight * 0.05), localWidth * 0.08, localHeight * 0.15 )];
+			[labelOne setFrame:NSMakeRect( 0, 0, localWidth * 0.08, localHeight * 0.15 )];
 			[labelOne setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelOne setNeedsDisplay:YES];
 			[self.view addSubview:labelOne];
 			
 			[labelTwo setString:[ contentString substringWithRange:NSMakeRange(0, 6)]];
-			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, -(localHeight * 0.05), localWidth * 0.7, localHeight * 0.15 )];
+			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, 0, localWidth * 0.7, localHeight * 0.15 )];
 			[labelTwo setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelTwo setNeedsDisplay:YES];
 			[self.view addSubview:labelTwo];
 			
 			[labelFour setString:[ contentString substringWithRange:NSMakeRange(6, 1)]];
-			[labelFour setFrame:NSMakeRect( localWidth * 0.91, -(localHeight * 0.05), localWidth * 0.1, localHeight * 0.15 )];
+			[labelFour setFrame:NSMakeRect( localWidth * 0.91, 0, localWidth * 0.1, localHeight * 0.15 )];
 			[labelFour setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelFour setNeedsDisplay:YES];
 			[self.view addSubview:labelFour];
 			break;
 		case kRSInterleaved:
 			[labelTwo setString:contentString];
-			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, -(localHeight * 0.05), localWidth * 0.7, localHeight * 0.15 )];
+			[labelTwo setFrame:NSMakeRect( localWidth * 0.13, 0, localWidth * 0.7, localHeight * 0.15 )];
 			[labelTwo setFont:[NSFont fontWithName:@"OCRB" size:localHeight * 0.13]];
 			[labelTwo setNeedsDisplay:YES];
 			[self.view addSubview:labelTwo];
